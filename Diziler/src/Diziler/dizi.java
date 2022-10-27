@@ -3,12 +3,20 @@ package Diziler;
 public class dizi {
 
 	public static void main(String[] args) {
-		int[] array=new int[10];
 		
-		System.out.printf("%s%8s%n","Index","Value");
+		final int ARRAY_LENGTH = 10;
 		
-		for(int counter = 0; counter<array.length;counter++) {
-			System.out.printf("%5d%8d%n",counter,array[counter]);
+		int[] array=new int[ARRAY_LENGTH];
+		
+		for (int counter =0; counter<array.length; counter++) {
+			array[counter]=2+2*counter;
+		}
+		
+		System.out.printf("%s%6s%n","Index","Value");
+		
+		
+		for(int counter =0; counter<array.length;counter++) {
+			System.out.printf("%1d%8d%n",counter,array[counter]);
 		}
 	}
 
